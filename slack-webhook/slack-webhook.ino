@@ -25,12 +25,12 @@ void loop() {
 void postIncommingWebHook() {
 
   String url = Nefry.getStoreStr(0);
-  String userName = Nefry.getConfStr(1);
-  String iconEmoji = Nefry.getConfStr(2);
+  String userName = Nefry.getStoreStr(1);
+  String iconEmoji = Nefry.getStoreStr(2);
   String* texts = new String[3];
-  texts[0] = Nefry.getConfStr(3);
-  texts[1] = Nefry.getConfStr(4);
-  texts[2] = Nefry.getConfStr(5);
+  texts[0] = Nefry.getStoreStr(3);
+  texts[1] = Nefry.getStoreStr(4);
+  texts[2] = Nefry.getStoreStr(5);
 
   WiFiClientSecure client;
 
