@@ -45,7 +45,7 @@ void postIncommingWebHook() {
     client.print(
                  String("POST ") + url + " HTTP/1.1\r\n" +
                  "Host: " + String(host) + "\r\n" +
-                 "Connection: close\r\n"
+                 "Connection: close\r\n" +
                  "Content-Type: application/x-www-form-urlencoded\r\n" +
                  "Content-Length: " + String(payload.length()) + "\r\n" + 
                  "\r\n" +
